@@ -30,64 +30,70 @@
 			<div class="col-sm-12">
 				<br>
 				<!-- panel is for handling the search parameters -->
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">Search Parameters</h3>
+						<h3 class="panel-title">
+							<span class="glyphicon glyphicon-list-alt"></span> Search Parameters</h3>
+						</div>
+						<div class="panel-body">
+							<label for= >Search</label>
+							<div class="input-group col-12">
+								<input id='searchTerm' type="text" class="form-control" placeholder="Search Term">
+								
+							</div>
+							<button id="search-button" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Submit</button>
+
+							<button id="search-button" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Clear</button>
+						</div>
+						
+						<!-- Create an HTML Form for handling the inputs-->
+						
+						<!-- Capture the number of records that the user wants to retrieve  -->
+
+						<!-- Capture the Start Year Parameter-->
+
+						<!-- Capture the End Year Parameter -->
+
+						<!-- Final submit button -->
+						
 					</div>
-					<div class="panel-body">
-						<label for= >Search</label>
-						<div class="input-group col-12">
-							<input id='searchTerm' type="text" class="form-control" placeholder="Search Term">
+				</div>
+			</div>
+
+			<!-- This row will handle all of the retrieved articles -->
+			<div class="row">
+				<div class="col-sm-12">
+					<br>
+
+					<!-- panel and wells for each of the articles retrieved -->
+					<div class="panel panel-primary">
+
+						<!-- Panel Heading for the retrieved articles box -->
+						<div class="panel-heading">Top Articles</div>
+						<!-- This main panel will hold each of the resulting articles -->
+						<div id="search-results">
 						</div>
 					</div>
-				
-				<!-- Create an HTML Form for handling the inputs-->
-				
-				<!-- Capture the number of records that the user wants to retrieve  -->
 
-				<!-- Capture the Start Year Parameter-->
+					<!-- Footer Region -->
+					<div class="row">
+						<div class="col-sm-12">
 
-				<!-- Capture the End Year Parameter -->
-
-				<!-- Final submit button -->
-				<button id="search-button" type="button" class="btn btn-primary">Submit</button>
-			</div>
-			</div>
-		</div>
-
-		<!-- This row will handle all of the retrieved articles -->
-		<div class="row">
-			<div class="col-sm-12">
-				<br>
-
-				<!-- panel and wells for each of the articles retrieved -->
-				<div class="panel panel-primary">
-
-					<!-- Panel Heading for the retrieved articles box -->
-
-					<!-- This main panel will hold each of the resulting articles -->
-
-				</div>
-
-				<!-- Footer Region -->
-				<div class="row">
-					<div class="col-sm-12">
-
+						</div>
 					</div>
+
 				</div>
 
-			</div>
 
+				<!-- More links to Bootstrap JS and jQuery -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-			<!-- More links to Bootstrap JS and jQuery -->
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+				<!-- Link to our custom JS -->
+				<script type="text/javascript" src="assets/script.js"></script>
 
-			<!-- Link to our custom JS -->
-			<script type="text/javascript" src="assets/script.js"></script>
-
-		</body>
-		</html>
+			</body>
+			</html>
