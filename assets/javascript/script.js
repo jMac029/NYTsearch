@@ -8,7 +8,7 @@
 
 $('#search-button').click(function() { 
 	event.preventDefault();
-	
+	articleSearch();
 
 });
 
@@ -25,14 +25,27 @@ function articleSearch() {
 	  method: 'GET',
 		}).done(function(result) {
 
-	  		var response = result.response.docs;
+	  		var response = result.response.docs[i];
 
 	  		console.log(response);
 
-	  		
+	  		var headline = response.headline.main;
+	  		var link = response.web_url;
+	  		var snip = response.snippet;
+	  		var byLine = response.byline.original;
+
+	  		for (var i = 0; i < response.length; i++) {
+	  			var articleDiv = $('<div>');
+
+
+	  			$(articleDiv).append(headline, snip, byLine);
+	  			$('#search-results').append(articleDiv);
+
+	  		}
+
 
 		}).fail(function(err) {
 	  		throw err;
 		});
-		
+
 }
