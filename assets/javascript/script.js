@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 // copied from the NYT API Documentation
 
-var searchTerm;
+var searchTerm = "";
 // console.log(searchTerm);
 
 	console.log("nytimes search")
@@ -44,7 +44,7 @@ var searchTerm;
 		  			var articleDiv = $('<div>');
 
 
-		  			$(articleDiv).append(headline, link, snip);
+		  			$(articleDiv).append(("<h2>" + headline +"</br>"), link+"</br>", snip);
 		  			$('#search-results').append(articleDiv);
 
 		  		}
